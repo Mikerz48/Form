@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>HTML Lesson</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form action="" method="post">
+      <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Insert your email here" required>
+      <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Insert your password here" required>
+      <label for="first_name">First Name</label>
+        <input type="text" id="first_name" name="first_name" placeholder="Insert your first name here" required maxlength="15">
+      <label for="last_name">Last Name</label>
+        <input type="text" id="last_name" name="last_name" placeholder="Insert your last name here" required pattern="[a-zA-Z]" minlength="2" maxlength="15">
+      <label for="birth">Birth Date</label>
+        <input type="date" id="birth" name="birth" required>
+      <label for="telnum">Phone Number</label>
+        <input type="number" id="telnum" name="telnum" required pattern="[0-9]" minlength="10" maxlength="10" placeholder="1234567890">
+    <div>
+      <label for="plan_select">Choose a Plan</label>
+      <select name="plans" id="plans" required>
+        <option value="Free Plan">Free Plan</option>
+        <option value="Bronze Plan">Bronze Plan 10€/Month</option>
+        <option value="Silver Plan">Silver Plan 20€/Month</option>
+        <option value="Gold Plan">Gold Plan 30€/Month</option>
+      </select>
+    </div>
+    <div>
+      <label for="checkbox">Pro Plan 80€/Month</label>
+      <input type="checkbox" id="pro_plan" name="pro_plan_check">
+    </div>
+    <div>
+      <label for="credit_card">Credit Card</label>
+      <input type="tel" id="credit_card" name="credit_card" required maxlength="16" placeholder="1111-2222-3333-4444" pattern="[0-9]">
+    </div>
+    <div>
+      <label for="expire_date">Expire date</label>
+      <input type="date" id="expire_date" name="expire_date" required>
+    </div>
+    <div>
+      <label for="cvc">CVC</label>
+      <input type="tel" id="cvc" name="cvc" required maxlength="3" minlength="3" placeholder="123">
+    </div>
+    <div>
+      <label for="billing_address">Billing Address</label>
+      <input type="text" id="billing_address" name="billing_address" required placeholder="New York Avn. 25">
+    </div>
+    <button type="submit">Submit</button>
+
+
+
+
+
+    </form>
+  </body>
+</html>
